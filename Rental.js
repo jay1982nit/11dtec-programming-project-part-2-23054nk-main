@@ -148,22 +148,45 @@ function closeForm()
     { key: "NecklaceSet_HE", category: "NecklaceSet", material: "HE", name: "High End Necklace set", image: "images/gold earrings.jpg", price: 60, market_price: 80 }        
  ];
 
-  function showCategories() 
-  {
-    const container = document.getElementById("MainContainer");
-    container.innerHTML = ""; // Clear the container
+function showCategories() 
+{
+  const container = document.getElementById("MainContainer");
+  container.innerHTML = ""; // Clear old items
 
-    // Step 1: Get unique categories from Products array
-    const categories = [];
-    for (let i = 0; i < Products.length; i++) 
+  // Manually list the fixed categories
+  const categories = ["Ear", "Ring", "Bracelet", "NecklaceSet"];
+
+  // Loop through each category
+  for (let i = 0; i < categories.length; i++) 
+  {
+    const category = categories[i];
+
+    // Find the first product in this category
+    let product = null;
+    for (let j = 0; j < Products.length; j++) 
     {
-      const category = Products[i].category;
-      if (!categories.includes(category)) 
+      if (Products[j].category === category) 
       {
-        categories.push(category);
+        product = Products[j];
+        break; // Stop after finding one product from this category
       }
     }
+
+    // Create image using the product info
+    const img = createImage(product.image, category);
+
+    // When the image is clicked
+    img.onclick = function () 
+    {
+      selectedCategory = category;
+      console.log("Category selected:", category); // Log for testing
+      showMaterials(); // Call next function
+    };
+
+    // Add the image to the page
+    container.appendChild(img);
   }
+}
 
 
 
