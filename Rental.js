@@ -127,6 +127,48 @@ function closeForm()
 /**************************************************************************ARRAY OF JEWERLY CATEGORIES******************************************************************************/
 // which category is clicked in Jewel and Material container
 
+
+ var Products = 
+ [
+    { key: "Ear_YG", category: "Ear", material: "YG",name: "Gold earrings", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "Ear_RG", category: "Ear", material: "RG", name: "Rose earrings", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
+    { key: "Ear_WG", category: "Ear", material: "WG", name: "White Gold earrings", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "Ear_HE", category: "Ear", material: "HE", name: "High End earrings", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
+    { key: "Ring_YG", category: "Ring", material: "YG", name: "Gold rings", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "Ring_RG", category: "Ring", material: "RG", name: "Rose rings", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
+    { key: "Ring_WG", category: "Ring", material: "WG", name: "White Gold rings", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "Ring_HE", category: "Ring", material: "HE", name: "High End rings", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
+    { key: "Bracelet_YG", category: "Bracelet", material: "YG", name: "Gold bracelet", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "Bracelet_RG", category: "Bracelet", material: "RG", name: "Rose bracelet", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
+    { key: "Bracelet_WG", category: "Bracelet", material: "WG", name: "White Gold bracelet", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "Bracelet_HE", category: "Bracelet", material: "HE", name: "High End bracelet", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
+    { key: "NecklaceSet_YG", category: "NecklaceSet", material: "YG", name: "Gold Necklace set", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "NecklaceSet_RG", category: "NecklaceSet", material: "RG", name: "Rose Necklace set", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
+    { key: "NecklaceSet_WG", category: "NecklaceSet", material: "WG", name: "White Gold Necklace set", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "NecklaceSet_HE", category: "NecklaceSet", material: "HE", name: "High End Necklace set", image: "images/gold earrings.jpg", price: 60, market_price: 80 }        
+ ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*
 var JewelId = ""; // Variable to store the clicked image's ID
 var MaterialId="";
 var ComboId="";
@@ -196,27 +238,7 @@ for (let i = 0; i < JCatimages.length; i++)
    }
   });
 }
-
-
- var Products = 
- [
-    { key: "Ear_YG", category: "Ear", material: "YG",name: "Gold earrings", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "Ear_RG", category: "Ear", material: "RG", name: "Rose earrings", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
-    { key: "Ear_WG", category: "Ear", material: "WG", name: "White Gold earrings", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "Ear_HE", category: "Ear", material: "HE", name: "High End earrings", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
-    { key: "Ring_YG", category: "Ring", material: "YG", name: "Gold rings", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "Ring_RG", category: "Ring", material: "RG", name: "Rose rings", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
-    { key: "Ring_WG", category: "Ring", material: "WG", name: "White Gold rings", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "Ring_HE", category: "Ring", material: "HE", name: "High End rings", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
-    { key: "Bracelet_YG", category: "Bracelet", material: "YG", name: "Gold bracelet", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "Bracelet_RG", category: "Bracelet", material: "RG", name: "Rose bracelet", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
-    { key: "Bracelet_WG", category: "Bracelet", material: "WG", name: "White Gold bracelet", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "Bracelet_HE", category: "Bracelet", material: "HE", name: "High End bracelet", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
-    { key: "NecklaceSet_YG", category: "NecklaceSet", material: "YG", name: "Gold Necklace set", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "NecklaceSet_RG", category: "NecklaceSet", material: "RG", name: "Rose Necklace set", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
-    { key: "NecklaceSet_WG", category: "NecklaceSet", material: "WG", name: "White Gold Necklace set", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "NecklaceSet_HE", category: "NecklaceSet", material: "HE", name: "High End Necklace set", image: "images/gold earrings.jpg", price: 60, market_price: 80 }        
- ];
+*/
  
 
 
