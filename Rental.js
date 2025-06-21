@@ -155,36 +155,36 @@ function showCategories()
 
   // Manually list the fixed categories
   const categories = ["Ear", "Ring", "Bracelet", "NecklaceSet"];
-
   // Loop through each category
-  for (let i = 0; i < categories.length; i++) 
-  {
-    const category = categories[i];
+  for (let i = 0; i < categories.length; i++) {
+    const category = categories[i].name;
+    const image = categories[i].image;
 
-    // Find the first product in this category
-    let product = null;
-    for (let j = 0; j < Products.length; j++) 
-    {
-      if (Products[j].category === category) 
-      {
-        product = Products[j];
-        break; // Stop after finding one product from this category
-      }
-    }
+    // Create a container for image and label
+    const itemDiv = document.createElement("div");
+    itemDiv.className = "category-item";
 
-    // Create image using the product info
-    const img = createImage(product.image, category);
-
-    // When the image is clicked
-    img.onclick = function () 
-    {
+    // Create image
+    const img = document.createElement("img");
+    img.src = image;
+    img.alt = category;
+    img.onclick = function () {
       selectedCategory = category;
-      console.log("Category selected:", category); // Log for testing
-      //showMaterials(); // Call next function
+      console.log("Category selected:", category);
+      showMaterials();
     };
 
-    // Add the image to the page
-    container.appendChild(img);
+    // Create label
+    const label = document.createElement("p");
+    label.textContent = category;
+    label.className = "category-label";
+
+    // Add image and label to container
+    itemDiv.appendChild(img);
+    itemDiv.appendChild(label);
+
+    // Add to MainContainer
+    container.appendChild(itemDiv);
   }
 }
 
