@@ -108,9 +108,8 @@ function SubmitForm(event)
   {
       document.getElementById("popupForm").style.display = "none";
       document.getElementById("rentcontainer").style.display = "none";
-      WelMsgbox.innerHTML="Kia Ora " + firstName1;
       document.getElementById("WelMsg").style.display = "block";
-      WelMsg.innerHTML="Let us help you select your dream jewellery. Select from the below categories (Nityaa to update)";
+      WelMsg.innerHTML="Kia Ora " + firstName1 + "Let us help you select your dream jewellery. Select from the below categories (Nityaa to update)";
       showCategories();
       document.getElementById("MainContainer").style.display = "flex";
       
