@@ -148,7 +148,22 @@ function closeForm()
     { key: "NecklaceSet_HE", category: "NecklaceSet", material: "HE", name: "High End Necklace set", image: "images/gold earrings.jpg", price: 60, market_price: 80 }        
  ];
 
+  function showCategories() 
+  {
+    const container = document.getElementById("MainContainer");
+    container.innerHTML = ""; // Clear the container
 
+    // Step 1: Get unique categories from Products array
+    const categories = [];
+    for (let i = 0; i < Products.length; i++) 
+    {
+      const category = Products[i].category;
+      if (!categories.includes(category)) 
+      {
+        categories.push(category);
+      }
+    }
+  }
 
 
 
