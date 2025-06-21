@@ -217,6 +217,7 @@ for (let i = 0; i < JCatimages.length; i++)
     { key: "NecklaceSet_WG", category: "NecklaceSet", material: "WG", name: "White Gold Necklace set", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
     { key: "NecklaceSet_HE", category: "NecklaceSet", material: "HE", name: "High End Necklace set", image: "images/gold earrings.jpg", price: 60, market_price: 80 }        
  ];
+ 
 
 
 
