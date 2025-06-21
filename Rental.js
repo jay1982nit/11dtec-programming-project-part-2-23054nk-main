@@ -112,7 +112,7 @@ function SubmitForm(event)
       document.getElementById("WelMsg").style.display = "block";
       WelMsg.innerHTML="Let us help you select your dream jewellery. Select from the below categories (Nityaa to update)";
       document.getElementById("MainContainer").style.display = "flex";
-
+      showCategories();
   }
   return false; // Ensure form does not reload page
 } // submit form ending 
