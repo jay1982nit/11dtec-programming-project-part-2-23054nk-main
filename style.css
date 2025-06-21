@@ -302,8 +302,8 @@ video {
 .MainContainer {
   display: none;              /* Hidden initially */
   height: 60vh;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 20px;
