@@ -144,7 +144,7 @@ function closeForm()
     { key: "Bracelet_HE", category: "Bracelet", material: "HE", name: "High End bracelet", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
     { key: "NecklaceSet_YG", category: "NecklaceSet", material: "YG", name: "Gold Necklace set", image: "images/gold green set.webp", price: 80, market_price: 80 },
     { key: "NecklaceSet_RG", category: "NecklaceSet", material: "RG", name: "Rose Necklace set", image: "images/rose gold necklace.webp", price: 60, market_price: 80 },
-    { key: "NecklaceSet_WG", category: "NecklaceSet", material: "WG", name: "White Gold Necklace set", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "NecklaceSet_WG", category: "NecklaceSet", material: "WG", name: "White Gold Necklace set", image: "images/white gold set.avif", price: 80, market_price: 80 },
     { key: "NecklaceSet_HE", category: "NecklaceSet", material: "HE", name: "High End Necklace set", image: "images/gold earrings.jpg", price: 60, market_price: 80 }        
  ];
 
