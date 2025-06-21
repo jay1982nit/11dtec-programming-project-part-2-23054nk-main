@@ -180,7 +180,7 @@ function showCategories()
     {
       selectedCategory = category;
       console.log("Category selected:", category); // Log for testing
-      showMaterials(); // Call next function
+      //showMaterials(); // Call next function
     };
 
     // Add the image to the page
