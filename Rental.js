@@ -136,7 +136,7 @@ function closeForm()
     { key: "Ear_HE", category: "Ear", material: "HE", name: "High End earrings", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
     { key: "Ring_YG", category: "Ring", material: "YG", name: "Gold rings", image: "images/gold ring.jpg", price: 80, market_price: 80 },
     { key: "Ring_RG", category: "Ring", material: "RG", name: "Rose rings", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
-    { key: "Ring_WG", category: "Ring", material: "WG", name: "White Gold rings", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "Ring_WG", category: "Ring", material: "WG", name: "White Gold rings", image: "images/white gold ring.webp", price: 80, market_price: 80 },
     { key: "Ring_HE", category: "Ring", material: "HE", name: "High End rings", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
     { key: "Bracelet_YG", category: "Bracelet", material: "YG", name: "Gold bracelet", image: "images/gold bracelet chain.jpg", price: 80, market_price: 80 },
     { key: "Bracelet_RG", category: "Bracelet", material: "RG", name: "Rose bracelet", image: "images/rose gold bracelet.jpeg", price: 60, market_price: 80 },
