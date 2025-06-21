@@ -111,8 +111,8 @@ function SubmitForm(event)
       WelMsgbox.innerHTML="Kia Ora " + firstName1;
       document.getElementById("WelMsg").style.display = "block";
       WelMsg.innerHTML="Let us help you select your dream jewellery. Select from the below categories (Nityaa to update)";
-      document.getElementById("JewelContainer").style.display = "flex";
-    //  displayJewelGallery(); 
+      document.getElementById("MainContainer").style.display = "flex";
+
   }
   return false; // Ensure form does not reload page
 } // submit form ending 
