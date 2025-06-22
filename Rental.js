@@ -249,7 +249,7 @@ function showItems (type)
       name.textContent = p.name;
       name.className = "product-info";
       const price = document.createElement ("p");
-      price.textContent = `price: $${p.price} /n(Market price: $${p.market_price})`;
+      price.textContent = `price: $${p.price} \n (Market price: $${p.market_price})`;
       price.className = "product-info";
 
       item.appendChild (img);
