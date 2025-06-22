@@ -136,28 +136,25 @@ function closeForm()
 // which category is clicked in Jewel and Material container
 
 
- const Products = [
-      { key: "Ear_YG_18", category: "Earring", material: "Yellow Gold", name: "Yellow Gold earrings 1", image: "images/gold earrings.jpg", price: 80, market_price: 8000, karat:18 },
-      { key: "Ear_YG_20", category: "Earring", material: "Yellow Gold", name: "Yellow Gold earrings 2", image: "images/Gold earring 2", price: 100, market_price: 10000, karat:20, link:"https://www.pexels.com/photo/a-pair-of-gemstones-studded-earrings-on-brown-surface-13595821/" },
-      { key: "Ear_RG_18", category: "Earring", material: "Rose Gold", name: "Rose Gold earrings", image: "images/rose gold earrings.jpg", price: 160, market_price: 16000, karat:18 },
-      { key: "Ear_WG_18", category: "Earring", material: "White Gold", name: "White Gold earrings", image: "images/white gold earrings.jpg", price: 180, market_price: 18000,karat:18 },
-      { key: "Ear_HE_22", category: "Earring", material: "High End Jewellery", name: "HE Yellow Gold earrings", image: "images/HE yellow gold earring.jpg", price: 160, market_price: 16000, karat:22 link:"https://www.pexels.com/photo/a-pair-of-gemstones-studded-earrings-on-brown-surface-13595821/"},
-      { key: "Ear_HE_24", category: "Earring", material: "High End Jewellery", name: "HE White Gold earrings", image: "images/HE White gold earring.jpg", price: 160, market_price: 16000, karat:24 link:"https://www.pexels.com/photo/elegant-silver-and-ruby-dangling-earrings-display-29609190/" },
-      { key: "Ring_YG_18", category: "Ring", material: "Yellow Gold", name: "Yellow Gold rings", image: "images/gold ring.jpg", price: 120, market_price: 12000, karat:18 },
-      { key: "Ring_RG_20", category: "Ring", material: "Rose Gold", name: "Rose Gold rings", image: "images/Rose gold ring.jpg", price: 160, market_price: 16000, karat:20, link:"https://www.pexels.com/photo/elegant-diamond-ring-with-festive-background-29245552/" },
-      { key: "Ring_WG_22", category: "Ring", material: "White Gold", name: "White Gold rings", image: "images/white gold ring.webp", price: 180, market_price: 18000, karat:22 },
-      { key: "Ring_HE_24", category: "Ring", material: "High End Jewellery", name: "HE Rose Gold rings", image: "images/HE Rose Gold ring.jpg", price: 260, market_price: 26000, karat:24 link:"https://www.pexels.com/photo/close-up-of-a-gold-ring-with-a-purple-stone-19132380/" },
-      { key: "Ring_HE_24", category: "Ring", material: "High End Jewellery", name: "HE Yellow Gold rings", image: "images/Yellow Gold ring HE.jpg", price: 260, market_price: 26000, karat:24 },
-      { key: "Ring_HE_24", category: "Ring", material: "High End Jewellery", name: "HE White Gold rings", image: "images/White gold ring HE .jpg", price: 260, market_price: 26000, karat:24, link:"https://www.pexels.com/photo/elegant-diamond-ring-on-black-background-31459470/" },
-      { key: "Bracelet_YG_18", category: "Bracelet", material: "Yellow Gold", name: "Yellow Gold bracelet", image: "images/gold bracelet chain.jpg", price: 280, market_price: 28000, karat:18 },
-      { key: "Bracelet_RG_20", category: "Bracelet", material: "Rose Gold", name: "Rose Gold bracelet", image: "images/rose gold bracelet.jpg", price: 260, market_price: 80, karat:20, link:"https://www.pexels.com/photo/elegant-diamond-bracelet-with-festive-lighting-29245550/" },
-      { key: "Bracelet_WG_22", category: "Bracelet", material: "White Gold", name: "White Gold bracelet", image: "images/white gold bracelet.jpg", price: 280, market_price: 80, karat:22 },
-      { key: "Bracelet_HE_24", category: "Bracelet", material: "High End Jewellery", name: "HE Yellow Gold bracelet", image: "images/HE YG bracelet.jpg", price: 360, market_price: 36000, karat:24 },
-      { key: "NecklaceSet_YG_18", category: "Necklace Set", material: "Yellow Gold", name: "Yellow Gold Necklace set", image: "images/gold green set.webp", price: 380, market_price: 38000, karat:18 },
-      { key: "NecklaceSet_RG_20", category: "Necklace Set", material: "Rose Gold", name: "Rose Gold Necklace set", image: "images/rose gold necklace.webp", price: 360, market_price: 36000, karat:20 },
-      { key: "NecklaceSet_WG_22", category: "Necklace Set", material: "White Gold", name: "White Gold Necklace set", image: "images/white gold set.avif.jpg", price: 380, market_price: 380000, karat:22 },
-      { key: "NecklaceSet_HE_24", category: "Necklace Set", material: "High End Jewellery", name: "HE Rose Gold Necklace set", image: "images/HE Rose Gold Necklaceset.jpg", price: 460, market_price: 46000, karat:24, link:"https://www.pexels.com/photo/elegant-diamond-and-emerald-necklace-set-on-display-29245554/" }
-    ];
+ var Products = 
+ [
+    { key: "Ear_YG", category: "Ear", material: "YG",name: "Gold earrings", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "Ear_RG", category: "Ear", material: "RG", name: "Rose earrings", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
+    { key: "Ear_WG", category: "Ear", material: "WG", name: "White Gold earrings", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
+    { key: "Ear_HE", category: "Ear", material: "HE", name: "High End earrings", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
+    { key: "Ring_YG", category: "Ring", material: "YG", name: "Gold rings", image: "images/gold ring.jpg", price: 80, market_price: 80 },
+    { key: "Ring_RG", category: "Ring", material: "RG", name: "Rose rings", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
+    { key: "Ring_WG", category: "Ring", material: "WG", name: "White Gold rings", image: "images/white gold ring.webp", price: 80, market_price: 80 },
+    { key: "Ring_HE", category: "Ring", material: "HE", name: "High End rings", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
+    { key: "Bracelet_YG", category: "Bracelet", material: "YG", name: "Gold bracelet", image: "images/gold bracelet chain.jpg", price: 80, market_price: 80 },
+    { key: "Bracelet_RG", category: "Bracelet", material: "RG", name: "Rose bracelet", image: "images/rose gold bracelet.jpeg", price: 60, market_price: 80 },
+    { key: "Bracelet_WG", category: "Bracelet", material: "WG", name: "White Gold bracelet", image: "images/white gold bracelet.webp", price: 80, market_price: 80 },
+    { key: "Bracelet_HE", category: "Bracelet", material: "HE", name: "High End bracelet", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
+    { key: "NecklaceSet_YG", category: "NecklaceSet", material: "YG", name: "Gold Necklace set", image: "images/gold green set.webp", price: 80, market_price: 80 },
+    { key: "NecklaceSet_RG", category: "NecklaceSet", material: "RG", name: "Rose Necklace set", image: "images/rose gold necklace.webp", price: 60, market_price: 80 },
+    { key: "NecklaceSet_WG", category: "NecklaceSet", material: "WG", name: "White Gold Necklace set", image: "images/white gold set.avif", price: 80, market_price: 80 },
+    { key: "NecklaceSet_HE", category: "NecklaceSet", material: "HE", name: "High End Necklace set", image: "images/gold earrings.jpg", price: 60, market_price: 80 }        
+ ];
 
 let selectdCategory ="";
 let selectedMaterial ="";
