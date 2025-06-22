@@ -110,8 +110,8 @@ function SubmitForm(event)
       document.getElementById("rentcontainer").style.display = "none";
       document.getElementById("WelMsg").style.display = "block";
       WelMsg.innerHTML="Kia Ora " + firstName1 + "Let us help you select your dream jewellery. Select from the below categories (Nityaa to update)";
-      //document.getElementById("container").style.display = "flex";
-      //showItems("category");
+      document.getElementById("MainContainer").style.display = "flex";
+      showItems("category");
       
       
   }
@@ -127,7 +127,7 @@ function closeForm()
 }
 /**************************************************************************ARRAY OF JEWERLY CATEGORIES******************************************************************************/
 // which category is clicked in Jewel and Material container
-/*
+
 
  var Products = 
  [
@@ -228,6 +228,7 @@ function showItems (type)
   }
 }
 
+**/
 
 
 
@@ -253,7 +254,7 @@ function showItems (type)
 
 
 
-**/
+
 
 
 
