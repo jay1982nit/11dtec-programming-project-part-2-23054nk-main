@@ -20,7 +20,7 @@ function SubmitForm(event)
   /**********validate First Name***********************/
   let firstName1 = document.getElementById("Firstnamebox").value.trim();
   console.log("First name is:", firstName1);
-   // let errorMessage1= document.getElementById("errorMessage1box");
+    let errorMessage1= document.getElementById("errorMessage1box");
     if (firstName1 === null || firstName1 === "" || firstName1 === " ")  //  That is the code that gives an error in an alert if you have not entered anything, Nityaa to update 
     {
        errorMessage1box.innerHTML ="Invalid, you must enter a valid name";
@@ -49,6 +49,7 @@ function SubmitForm(event)
   let  lastName1= document.getElementById("Lastnamebox").value.trim();
 
   console.log("Last name is:", lastName1);  // Optional: just to check
+     let errorMessage2= document.getElementById("errorMessage2box");
       if (lastName1 === null || lastName1 === "" || lastName1 === " ")  //  That is the code that gives an error in an alert if you have not entered anything, Nityaa to update 
     {
        errorMessage2box.innerHTML ="Invalid, you must enter a valid name";
@@ -80,6 +81,7 @@ function SubmitForm(event)
   let userAge ;
   let age = document.getElementById("Agebox").value.trim();
   console.log ("this is the type of age=", typeof(age));
+     let errorMessage3= document.getElementById("errorMessage3box");
   userAge = Number(age)
   console.log ("this is the type of age=", typeof(userAge));
     if (userAge == null || userAge == "" || userAge == " " )
