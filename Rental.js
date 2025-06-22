@@ -244,7 +244,7 @@ function showItems (type)
       const item = document.createElememt ('div');
       item.className = "item";
 
-      const img
+      const img = createImage
     }
   }
   }
