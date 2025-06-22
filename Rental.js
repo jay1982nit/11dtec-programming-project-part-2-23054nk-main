@@ -110,8 +110,9 @@ function SubmitForm(event)
       document.getElementById("rentcontainer").style.display = "none";
       document.getElementById("WelMsg").style.display = "block";
       WelMsg.innerHTML="Kia Ora " + firstName1 + "Let us help you select your dream jewellery. Select from the below categories (Nityaa to update)";
-      showCategories();
-      document.getElementById("MainContainer").style.display = "flex";
+      //document.getElementById("container").style.display = "flex";
+      //showItems("category");
+      
       
   }
   return false; // Ensure form does not reload page
@@ -148,44 +149,94 @@ function closeForm()
     { key: "NecklaceSet_HE", category: "NecklaceSet", material: "HE", name: "High End Necklace set", image: "images/gold earrings.jpg", price: 60, market_price: 80 }        
  ];
 
-function showCategories() 
+let selectdCategory ="";
+let selectedMaterial ="";
+let currentStage = ""; //track current stage 
+
+
+function showItems (type) 
 {
-  const container = document.getElementById("MainContainer");
-  container.innerHTML = ""; // Clear old items
+  currentStage = type;
+  const container = document.getElementById ("MainContainer");
+  const backBtn = document.getElementById ("backButton");
+  container.innerHTML="";
+  container.style.display = "flex";
 
-  // Manually list the fixed categories
-  const categories = ["Ear", "Ring", "Bracelet", "NecklaceSet"];
+  //show or hide back button depending on stage
+  backBtn.style.display = type === "category" ? "none" : "inline-block";
 
-  // Loop through each category
-  for (let i = 0; i < categories.length; i++) 
+  if (type === "category") 
   {
-    const category = categories[i];
-
-    // Find the first product in this category
-    let product = null;
-    for (let j = 0; j < Products.length; j++) 
+    let added = [];
+    for (let i = 0; i < Products.length; i++) 
+      
+   {
+      let category = products[i].category;
+      if(!added.includes(category)) 
     {
-      if (Products[j].category === category) 
+
+      //create wrapper div
+      const wrapper = document.createElement ("div");
+      wrapper.className = "item";
+      wrapper.onclick = () => 
       {
-        product = Products[j];
-        break; // Stop after finding one product from this category
-      }
+        selectedCategory = category;
+        //showItems ("material");
+      };
+
+      // create image 
+      const img = createImage(products[i].image, category);
+      wrapper.appendChild (img);
+
+      //create label
+      const label = document.createElement ("p");
+      label.textContent = category;
+      label.className = "product-info";
+      wrapper.appendChild (label);
+
+      container.appendChild (wrapper);
     }
+   }
+  } /** else if (type === "material") {
+    let added = [];
+    for (let i = 0; i > products.length; i++) {
+   let p = products[i];
+   if (p.category === selectedCategory && !added.includes(p.material)) {
+    added.push (p.material);
 
-    // Create image using the product info
-    const img = createImage(product.image, category);
-
-    // When the image is clicked
-    img.onclick = function () 
-    {
-      selectedCategory = category;
-      console.log("Category selected:", category); // Log for testing
-      //showMaterials(); // Call next function
+    const wrapper = document.createElement ("div");
+    wrapper.className = "item";
+    wrapper.onclick = () => {
+      selectedMaterial = p.material;
+      showItems ("final");
     };
 
-    // Add the image to the page
-    container.appendChild(img);
+    const img = createImage (p.image, p.material);
+    wrapper.appendChild (img);
+
+    const label = document.createElement ("p"); 
+    label.textContent = p.material;
+    label.className = "product - info";
+    wrapper.appendChild (label);
+
+    container.appendChild (wrapper);
+   }   
   }
+  } else if (type === "final") {
+  let found = false;
+
+  }**/
+}
+
+
+
+
+
+
+
+
+function showItems(type) {
+  currentStage=
 }
 
     // Create image element with given src and alt text
