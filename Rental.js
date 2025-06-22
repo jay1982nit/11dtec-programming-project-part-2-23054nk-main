@@ -162,7 +162,7 @@ let currentStage = "category"; //track current stage
 
 
 function showItems (type) 
-{
+{ console.log ("enter the function show item" + type)
   currentStage = type;
   const container = document.getElementById ("MainContainer");
   const backBtn = document.getElementById ("backButton");
