@@ -127,6 +127,9 @@ function closeForm()
   document.getElementById("Firstnamebox").value = "";
   document.getElementById("Lastnamebox").value = "";
   document.getElementById("Agebox").value = "";
+  document.getElementById("errorMessage1box").value = "";
+  document.getElementById("errorMessage2box").value = "";
+  document.getElementById("errorMessage3box").value = "";
   document.getElementById("popupForm").style.display = "none";
 }
 /**************************************************************************ARRAY OF JEWERLY CATEGORIES******************************************************************************/
