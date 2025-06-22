@@ -236,7 +236,7 @@ function showItems (type)
   else if (type === "final") 
   {
   let found = false;
-
+  for (let i = 0; i < Products.length;)
   }
 }
 
