@@ -115,7 +115,7 @@ function SubmitForm(event)
       WelMsg.innerHTML="Kia Ora " + firstName1 + " Let us help you select your dream jewellery. Select from the below categories (Nityaa to update)";
       document.getElementById("MainContainer").style.display = "flex";
 
-      //showItems("category");
+    showItems("category");
       
       
   }
