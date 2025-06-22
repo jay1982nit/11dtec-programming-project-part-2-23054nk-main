@@ -138,10 +138,11 @@ function closeForm()
 
  var Products = 
  [
-    { key: "Ear_YG", category: "Ear", material: "YG",name: "Gold earrings", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "Ear_RG", category: "Ear", material: "RG", name: "Rose earrings", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
-    { key: "Ear_WG", category: "Ear", material: "WG", name: "White Gold earrings", image: "images/white gold earrings.jpg", price: 80, market_price: 80 },
-    { key: "Ear_HE", category: "Ear", material: "HE", name: "High End earrings", image: "images/gold earrings.jpg", price: 60, market_price: 80 },        
+    { key: "Ear_YG_18", category: "Earring", material: "Yellow Gold", name: "Yellow Gold earrings 1", image: "images/gold earrings.jpg", price: 80, market_price: 8000, karat:18  },
+    { key: "Ear_YG_20", category: "Earring", material: "Yellow Gold", name: "Yellow Gold earrings 2", image: "images/Gold earring 2", price: 100, market_price: 10000, karat:20 },
+    { key: "Ear_RG_18", category: "Earring", material: "Rose Gold", name: "Rose Gold earrings", image: "images/rose gold earrings.jpg", price: 160, market_price: 16000, karat:18 },
+    { key: "Ear_WG_18", category: "Earring", material: "White Gold", name: "White Gold earrings", image: "images/white gold earrings.jpg", price: 180, market_price: 18000,karat:18 },
+    { key: "Ear_HE_22", category: "Earring", material: "High End Jewellery", name: "HE Yellow Gold earrings", image: "images/HE yellow gold earring.jpg", price: 160, market_price: 16000, karat:22},         
     { key: "Ring_YG", category: "Ring", material: "YG", name: "Gold rings", image: "images/gold ring.jpg", price: 80, market_price: 80 },
     { key: "Ring_RG", category: "Ring", material: "RG", name: "Rose rings", image: "images/rose gold earrings.jpg", price: 60, market_price: 80 },
     { key: "Ring_WG", category: "Ring", material: "WG", name: "White Gold rings", image: "images/white gold ring.webp", price: 80, market_price: 80 },
