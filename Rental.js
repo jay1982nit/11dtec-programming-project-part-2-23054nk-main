@@ -173,7 +173,7 @@ function showItems (type)
     for (let i = 0; i < Products.length; i++) 
       
    {
-      let category = products[i].category;
+      let category = Products[i].category;
       if(!added.includes(category)) 
     {
 
@@ -187,7 +187,7 @@ function showItems (type)
       };
 
       // create image 
-      const img = createImage(products[i].image, category);
+      const img = createImage(Products[i].image, category);
       wrapper.appendChild (img);
 
       //create label
@@ -201,8 +201,8 @@ function showItems (type)
    }
   } /** else if (type === "material") {
     let added = [];
-    for (let i = 0; i > products.length; i++) {
-   let p = products[i];
+    for (let i = 0; i > Products.length; i++) {
+   let p = Products[i];
    if (p.category === selectedCategory && !added.includes(p.material)) {
     added.push (p.material);
 
