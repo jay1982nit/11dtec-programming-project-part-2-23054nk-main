@@ -108,6 +108,7 @@ function SubmitForm(event)
   {
       document.getElementById("popupForm").style.display = "none";
       document.getElementById("rentcontainer").style.display = "none";
+      let WelMsg = document.getElementById("WelMsg")
       document.getElementById("WelMsg").style.display = "block";
       WelMsg.innerHTML="Kia Ora " + firstName1 + "Let us help you select your dream jewellery. Select from the below categories (Nityaa to update)";
       document.getElementById("MainContainer").style.display = "flex";
