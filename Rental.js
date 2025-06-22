@@ -275,12 +275,6 @@ function goBack () {
 }
 
 
-
-
-
-
-
-
     // Create image element with given src and alt text
     function createImage(src, alt) 
     {
