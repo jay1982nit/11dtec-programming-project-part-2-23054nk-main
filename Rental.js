@@ -162,7 +162,8 @@ let selectedMaterial ="";
 
 
 function showItems (type) 
-{ console.log ("enter the function show item: " + type)
+{ 
+  console.log ("enter the function show item: " + type)
   currentStage = type;
   const container = document.getElementById ("MainContainer");
   const backBtn = document.getElementById ("backButton");
@@ -188,7 +189,7 @@ function showItems (type)
       wrapper.onclick = () => 
       {
         selectedCategory = category;
-        //showItems ("material");
+        showItems ("material");
       };
 
       // create image 
@@ -204,7 +205,9 @@ function showItems (type)
       container.appendChild (wrapper);
     }
    }
-  } /** else if (type === "material") {
+  }  
+  else if (type === "material") 
+  {
     let added = [];
     for (let i = 0; i < Products.length; i++) {
    let p = Products[i];
@@ -229,10 +232,12 @@ function showItems (type)
     container.appendChild (wrapper);
    }   
   }
-  } else if (type === "final") {
+  } 
+  else if (type === "final") 
+  {
   let found = false;
 
-  }**/
+  }
 }
 
 
