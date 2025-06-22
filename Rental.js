@@ -267,7 +267,8 @@ function showItems (type)
  }
 }
 
-function goBack () {
+function goBack () 
+{
   if (currentStage === "final") {
     showItems ("material");
   } 
@@ -277,14 +278,14 @@ function goBack () {
 }
 
 
-    // Create image element with given src and alt text
-    function createImage(src, alt) 
-    {
-      const img = document.createElement("img");
-      img.src = src;
-      img.alt = alt;
-      return img;
-    }
+// Create image element with given src and alt text
+ function createImage(src, alt) 
+  {
+  const img = document.createElement("img");
+  img.src = src;
+  img.alt = alt;
+  return img;
+   }
 
 
 
