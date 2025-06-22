@@ -241,7 +241,7 @@ function showItems (type)
     if (p.category === selectedCategory && p.material === selectedMaterial) {
       found = true;
 
-      const item = document.createElememt ("div");
+      const item = document.createElement ("div");
       item.className = "item";
 
       const img = createImage (p.image, p.name);
