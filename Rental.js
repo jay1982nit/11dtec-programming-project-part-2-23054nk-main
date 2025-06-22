@@ -155,7 +155,7 @@ function closeForm()
 
 let selectdCategory ="";
 let selectedMaterial ="";
-let currentStage = ""; //track current stage 
+let currentStage = "category"; //track current stage 
 
 
 function showItems (type) 
@@ -229,10 +229,10 @@ function showItems (type)
   } else if (type === "final") {
   let found = false;
 
-  }
+  }**/
 }
 
-**/
+
 
 
 
