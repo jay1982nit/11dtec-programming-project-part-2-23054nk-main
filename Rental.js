@@ -269,8 +269,8 @@ function goBack () {
   if (currentStage === "final") {
     showItems ("material");
   } 
-  else if (currentStage === "final") {
-    showItems ("material");
+  else if (currentStage === "material") {
+    showItems ("category");
   } 
 }
 
