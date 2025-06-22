@@ -135,7 +135,7 @@ function closeForm()
 /**************************************************************************ARRAY OF JEWERLY CATEGORIES******************************************************************************/
 // which category is clicked in Jewel and Material container
 
-
+// for rental page 
  var Products = 
  [
     { key: "Ear_YG_18", category: "Earring", material: "Yellow Gold", name: "Yellow Gold earrings 1", image: "images/gold earrings.jpg", price: 80, market_price: 8000, karat:18  },
