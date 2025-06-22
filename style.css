@@ -328,6 +328,20 @@ video {
   cursor: pointer;
 }
 
+    .BackButton {
+      display: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #a35a5a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .BackButton:hover {
+      background-color: #8c4747;
+    }
 
 /**************************************RENTAL**************************************************/ 
 /**************************************BROWSE BY JEWELRY**************************************************/
