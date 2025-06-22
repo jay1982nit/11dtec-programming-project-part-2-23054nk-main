@@ -242,7 +242,8 @@ function showItems (type)
 
 
     // Create image element with given src and alt text
-    function createImage(src, alt) {
+    function createImage(src, alt) 
+    {
       const img = document.createElement("img");
       img.src = src;
       img.alt = alt;
