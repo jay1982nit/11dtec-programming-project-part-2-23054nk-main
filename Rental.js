@@ -7,6 +7,7 @@
 
 /**************************************************************************FUNCTION  OPENFORM******************************************************************************/
  let firstName1;
+ let  lastName1;
  function openForm() {
   document.getElementById("popupForm").style.display = "block";
 
@@ -17,8 +18,8 @@ function SubmitForm(event)
   if (event) event.preventDefault();  // Prevent form from submitting
   let isValid = true;
   /**********validate First Name***********************/
-  firstName1 = document.getElementById("Firstnamebox").value.trim();
-  console.log("First name is:", firstName1);
+    firstName1 = document.getElementById("Firstnamebox").value.trim();
+    console.log("First name is:", firstName1);
     let errorMessage1= document.getElementById("errorMessage1box");
     if (firstName1 === null || firstName1 === "" || firstName1 === " ")  //  That is the code that gives an error in an alert if you have not entered anything, Nityaa to update 
     {
@@ -45,7 +46,7 @@ function SubmitForm(event)
       errorMessage1box.innerHTML = ""; // Clear any old messages
     } 
    /***********validate last Name***************************/ 
-  let  lastName1= document.getElementById("Lastnamebox").value.trim();
+    lastName1= document.getElementById("Lastnamebox").value.trim();
 
   console.log("Last name is:", lastName1);  // Optional: just to check
      let errorMessage2= document.getElementById("errorMessage2box");
@@ -113,10 +114,7 @@ function SubmitForm(event)
       document.getElementById("WelMsg").style.display = "block";
       WelMsg.innerHTML="Kia Ora " + firstName1 + " Let us help you select your dream jewellery. Select from the categories below  (Nityaa to update)";
       //document.getElementById("MainContainer").style.display = "flex";
-
-    showItems("category");
-      
-      
+      showItems("category");   
   }
   return false; // Ensure form does not reload page
 } // submit form ending 
