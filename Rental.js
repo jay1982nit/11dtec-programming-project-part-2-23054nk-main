@@ -178,7 +178,7 @@ function showItems (type)
       let category = Products[i].category;
       if(!added.includes(category)) 
     {
-
+       added.push(category);
       //create wrapper div
       const wrapper = document.createElement ("div");
       wrapper.className = "item";
