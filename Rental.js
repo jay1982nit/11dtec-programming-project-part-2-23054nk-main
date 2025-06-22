@@ -265,7 +265,14 @@ function showItems (type)
  }
 }
 
-
+function goBack () {
+  if (currentStage === "final") {
+    showItems ("material");
+  } 
+  else if (currentStage === "final") {
+    showItems ("material");
+  } 
+}
 
 
 
