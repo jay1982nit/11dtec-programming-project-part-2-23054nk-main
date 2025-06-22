@@ -236,7 +236,17 @@ function showItems (type)
   else if (type === "final") 
   {
   let found = false;
-  for (let i = 0; i < Products.length;)
+  for (let i = 0; i < Products.length; i++) {
+    let p = Products [i];
+    if (p.category === selectedCategory && p.material === selectedMaterial) {
+      found = true;
+
+      const item = document.createElememt ('div');
+      item.className = "item";
+
+      const img
+    }
+  }
   }
 }
 
