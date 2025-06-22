@@ -122,9 +122,9 @@ function SubmitForm(event)
 /*******************************************************************************FUNCTION  CLOSE FORM*************************************************************************************/
 function closeForm() 
 {
-  Firstnamebox.value="";
-  Lastnamebox.value="";
-  Agebox.value="";
+  document.getElementById("Firstnamebox").value = "";
+  document.getElementById("Lastnamebox").value = "";
+  document.getElementById("Agebox").value = "";
   document.getElementById("popupForm").style.display = "none";
 }
 /**************************************************************************ARRAY OF JEWERLY CATEGORIES******************************************************************************/
