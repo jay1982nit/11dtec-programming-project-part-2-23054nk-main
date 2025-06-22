@@ -173,7 +173,7 @@ function showItems (type)
   container.style.display = "flex";
 
   //show or hide back button depending on stage
-  //backBtn.style.display = type === "category" ? "none" : "inline-block";
+  backBtn.style.display = type === "category" ? "none" : "inline-block";
 
   if (type === "category") 
   {
