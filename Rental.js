@@ -130,7 +130,7 @@ function closeForm()
 /**************************************************************************ARRAY OF JEWERLY CATEGORIES******************************************************************************/
 // which category is clicked in Jewel and Material container
 
-/**
+
  var Products = 
  [
     { key: "Ear_YG", category: "Ear", material: "YG",name: "Gold earrings", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
@@ -230,7 +230,7 @@ function showItems (type)
   }
 }
 
-
+**/
 
 
 
@@ -247,7 +247,7 @@ function showItems (type)
       return img;
     }
 
-**/
+
 
 
 
