@@ -203,7 +203,7 @@ function showItems (type)
    }
   } /** else if (type === "material") {
     let added = [];
-    for (let i = 0; i > Products.length; i++) {
+    for (let i = 0; i < Products.length; i++) {
    let p = Products[i];
    if (p.category === selectedCategory && !added.includes(p.material)) {
     added.push (p.material);
