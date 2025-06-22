@@ -6,8 +6,7 @@
 
 
 /**************************************************************************FUNCTION  OPENFORM******************************************************************************/
- // document.getElementById("SelMsg").style.display = "block";
-//  document.getElementById("JewelCat").style.display = "block"; 
+ let firstName1;
  function openForm() {
   document.getElementById("popupForm").style.display = "block";
 
@@ -18,7 +17,7 @@ function SubmitForm(event)
   if (event) event.preventDefault();  // Prevent form from submitting
   let isValid = true;
   /**********validate First Name***********************/
-  let firstName1 = document.getElementById("Firstnamebox").value.trim();
+  firstName1 = document.getElementById("Firstnamebox").value.trim();
   console.log("First name is:", firstName1);
     let errorMessage1= document.getElementById("errorMessage1box");
     if (firstName1 === null || firstName1 === "" || firstName1 === " ")  //  That is the code that gives an error in an alert if you have not entered anything, Nityaa to update 
