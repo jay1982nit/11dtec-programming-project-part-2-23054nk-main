@@ -383,21 +383,12 @@ video {
   margin: 0 auto;
 }
 /* Price label */
-.price {
+.link {
   font-weight: bold;
   color: #b06a6a;
   margin-bottom: 10px;
 }
-.rentbtn {
-  margin-top: 8px;
-  background-color: #b06a6a;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  
-  cursor: pointer;
-}
+
 
 .rentbtn:hover {
   background-color: #a55757;
