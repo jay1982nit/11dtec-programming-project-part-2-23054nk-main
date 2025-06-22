@@ -244,7 +244,12 @@ function showItems (type)
       const item = document.createElememt ('div');
       item.className = "item";
 
-      const img = createImage
+      const img = createImage (p.image, p.name);
+      const name = document.createElement ("P");
+      name.textContent = p.name;
+      name.className = "product-info";
+      const price = document.createElement ("p");
+      price.textContent = "price: $${p.price} (Market price: $${p.marketprice}"
     }
   }
   }
