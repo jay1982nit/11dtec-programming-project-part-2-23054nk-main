@@ -128,7 +128,7 @@ function closeForm()
 /**************************************************************************ARRAY OF JEWERLY CATEGORIES******************************************************************************/
 // which category is clicked in Jewel and Material container
 
-
+/**
  var Products = 
  [
     { key: "Ear_YG", category: "Ear", material: "YG",name: "Gold earrings", image: "images/gold earrings.jpg", price: 80, market_price: 80 },
@@ -228,7 +228,7 @@ function showItems (type)
   }
 }
 
-**/
+
 
 
 
@@ -245,6 +245,7 @@ function showItems (type)
       return img;
     }
 
+**/
 
 
 
@@ -259,80 +260,6 @@ function showItems (type)
 
 
 
-
-
- /*
-var JewelId = ""; // Variable to store the clicked image's ID
-var MaterialId="";
-var ComboId="";
-const jewelContainer = document.getElementById("JewelContainer"); // Get the JewelContainer
-const materialContainer = document.getElementById("MaterialContainer"); // Get the MaterialContainer
-const JCatimages = jewelContainer.getElementsByTagName("img"); // Add event listener to each image inside the Jewel container
-const MCatimages = materialContainer.getElementsByTagName("img"); // Add event listener to each image inside the Material container
-
-for (let i = 0; i < JCatimages.length; i++) 
-{
-  JCatimages[i].addEventListener("click", function() 
-  {
-    JewelId = this.id;
-    console.log("Clicked Jewel ID", JewelId); 
-    if (JewelId !== "")
-    {
-      console.log("Inside if loop:", JewelId); 
-      document.getElementById("JewelContainer").style.display = "none";
-      document.getElementById("MaterialContainer").style.display = "flex";
-      WelMsg.innerHTML="Select from the below materials (Nityaa to update)";
-      for (let j = 0; j < MCatimages.length; j++) 
-      {
-        console.log("Clicked Jewel ID 2", JewelId); 
-        MCatimages[j].addEventListener("click", function() 
-        {
-          //console.log("Clicked Jewel ID 3", JewelId);
-          MaterialId = this.id;
-          console.log("Clicked Material ID", MaterialId); 
-          
-          ComboId = JewelId + "_" + MaterialId;
-          console.log("Key ID", ComboId); 
-          localStorage.setItem("ComboId", ComboId);
-          document.getElementById("MaterialContainer").style.display = "none";
-          
-          const matchedProduct = Products.find(product => product.key === ComboId);
-          if (matchedProduct) 
-            {
-              WelMsg.innerHTML = "Select from the final products (Nityaa to update)";
-              const finalContainer = document.getElementById("FinalContainer");
-              finalContainer.style.display = "flex";
-              finalContainer.innerHTML = ""; // Clear any previous content
-
-              // Create and display product
-              const productImg = document.createElement("img");
-              productImg.src = matchedProduct.image;
-              productImg.alt = matchedProduct.name;
-
-              const productName = document.createElement("p");
-              productName.textContent = matchedProduct.name;
-
-              const productPrice = document.createElement("p");
-              productPrice.textContent = "$" + matchedProduct.price;
-
-              // Append to container
-              finalContainer.appendChild(productImg);
-              finalContainer.appendChild(productName);
-              finalContainer.appendChild(productPrice);
-            } 
-            else 
-            {
-              console.log("No product found for key:", ComboId);
-            }
-
-        });
-      }
-      
-   }
-  });
-}
-*/
- 
 
 
 
