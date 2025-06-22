@@ -160,7 +160,7 @@ function closeForm()
 
 let selectdCategory ="";
 let selectedMaterial ="";
-//let currentStage = "category"; //track current stage 
+
 
 
 function showItems (type) 
@@ -210,7 +210,7 @@ function showItems (type)
   }  
   else if (type === "material") 
   {
-    WelMsg.innerHTML=firstName1 + " Please Select from the material from below  (Nityaa to update)";
+    WelMsg.innerHTML= firstName1 + " Please Select from the material from below  (Nityaa to update)";
     let added = [];
     for (let i = 0; i < Products.length; i++) {
    let p = Products[i];
