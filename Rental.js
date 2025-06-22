@@ -210,6 +210,7 @@ function showItems (type)
   }  
   else if (type === "material") 
   {
+    WelMsg.innerHTML=firstName1 + " Please Select from the material from below  (Nityaa to update)";
     let added = [];
     for (let i = 0; i < Products.length; i++) {
    let p = Products[i];
@@ -237,6 +238,7 @@ function showItems (type)
   } 
   else if (type === "final") 
   {
+    WelMsg.innerHTML=firstName1 + " Please Select your desired piece  (Nityaa to update)";
   let found = false;
   for (let i = 0; i < Products.length; i++) {
     let p = Products [i];
