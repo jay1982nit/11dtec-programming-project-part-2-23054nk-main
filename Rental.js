@@ -127,7 +127,7 @@ function closeForm()
 }
 /**************************************************************************ARRAY OF JEWERLY CATEGORIES******************************************************************************/
 // which category is clicked in Jewel and Material container
-
+/*
 
  var Products = 
  [
@@ -225,7 +225,7 @@ function showItems (type)
   } else if (type === "final") {
   let found = false;
 
-  }**/
+  }
 }
 
 
@@ -235,9 +235,6 @@ function showItems (type)
 
 
 
-function showItems(type) {
-  currentStage=
-}
 
     // Create image element with given src and alt text
     function createImage(src, alt) {
@@ -256,7 +253,7 @@ function showItems(type) {
 
 
 
-
+**/
 
 
 
