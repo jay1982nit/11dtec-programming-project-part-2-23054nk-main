@@ -249,10 +249,20 @@ function showItems (type)
       name.textContent = p.name;
       name.className = "product-info";
       const price = document.createElement ("p");
-      price.textContent = "price: $${p.price} (Market price: $${p.marketprice}"
+      price.textContent = "price: $${p.price} (Market price: $${p.market_price})";
+      price.className = "product-info";
+
+      item.appendChild (img);
+      item.appendChild (name);
+      item.appendChild (price);
+
+      container.appendChild (item);
     }
   }
+  if (!found) {
+    container.textContent = "No matching products found.";
   }
+ }
 }
 
 
