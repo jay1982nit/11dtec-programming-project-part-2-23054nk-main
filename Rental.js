@@ -253,6 +253,7 @@ function showItems (type)
       item.className = "item";
 
       const img = createImage (p.image, p.name);
+      88888888888888888888
       const name = document.createElement ("P");
       name.textContent = p.name;
       name.className = "product-info";
