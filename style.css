@@ -311,23 +311,28 @@ video {
   justify-content: space-around;
   align-items: flex-start;
   gap: 20px;
-  padding: 20px;
+  padding: 15px;
   max-width: 100%;
-
+background-color: #4CAF50;
 
 }
 
-    .item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 22%;
-      cursor: pointer;
-    }
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 22%;
+  cursor: pointer;
+    text-align: center;
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  padding: 0px;
+  min-height: 650px;
+  }
 
     .item img {
       width: 100%;
-      height: 75%;
+      height: 100%;
       object-fit: cover;
       border-radius: 15px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -428,4 +433,19 @@ video {
   white-space: pre-line;
 }
 
+/**********FOR THE POPUP BOX**********/
+.popupBox {
+  display: none;
+  position: fixed;
+  top:0;
+  right: 0;
+}
+.popupBox img {
+  width: 100%;
+  border-radius: 10px;
+margin-bottom: 10px;
+}
+
+.popupBox button
+/**********FOR THE POPUP BOX**********/
 /**************************************BROWSE BY JEWELRY**************************************************/

@@ -78,16 +78,40 @@
 <div id="MainContainer" class="MainContainer"></div>
 <button class="BackButton" id="BackButton" onclick="goBack()">← Back</button>
 <!---------------------------------------POPUP BOX------------------------------------------------------------------------------------------->
-<div id="popupBox">
+<div id="popupBox" class="popupBox">
   <button onclick="closePopup()">close</button>
   <div id="popupImage"></div>
+  <p id="popupName"></p>
+  <p id="popupPrice"></p>
+  
+  <!--Karat Selection-->
+  <label>Karat:
+    <select id="KaratSelect" onchange="checkKarat()">
+    <option value="">Select Karat</option>
+    <option value="10">10K</option>
+    <option value="14">14K</option>
+    <option value="18">18K</option>
+    <option value="20">20K</option>
+    <option value="24">24K</option>
+    </select>
+  </label>
+  <p id="karatMessage" style="color:red;"></p>
+
+<!-- Number of days selection-->
+  <label>Number of Days:
+    <select id="daysSelect" onchange="calculateTotal()">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </label>
+
+  <!-- total price display -->
+  <p> Total price: $<span id="totalPrice">0</span></p>
+  <button onclick="addToCart()">Add To Cart</button>
 </div>
-
-
-
-
-
-
 
 
 
