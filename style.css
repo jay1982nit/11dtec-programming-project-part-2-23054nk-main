@@ -304,7 +304,7 @@ video {
   font-size: 15px;
 }
  /*color of the Jewellery categories*/
-.MainContainer {
+.mainContainer {
   display: none;              /* Hidden initially */
   height: 60vh;
   flex-wrap: nowrap;
@@ -313,8 +313,6 @@ video {
   gap: 20px;
   padding: 15px;
   max-width: 100%;
-background-color: #4CAF50;
-
 }
 
 .item {

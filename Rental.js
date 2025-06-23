@@ -168,7 +168,7 @@ function showItems (type)
 { 
   console.log ("enter the function show item: " + type)
   currentStage = type;
-  const container = document.getElementById ("MainContainer");
+  const container = document.getElementById ("mainContainer");
   const backButton = document.getElementById ("backButton");
   container.innerHTML="";
   container.style.display = "flex";
