@@ -437,6 +437,17 @@ background-color: #4CAF50;
 .popupBox {
   display: none;
   position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 10;
+  border-radius: 10px;  display: none;
+  position: fixed;
   top:0;
   right: 0;
   width: 320px;
