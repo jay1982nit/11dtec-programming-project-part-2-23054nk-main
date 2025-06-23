@@ -459,13 +459,13 @@ background-color: #4CAF50;
   z-index: 10;
 }
 .popupBox img {
-  width: 100%;
+  width: 70%;
   border-radius: 10px;
 margin-bottom: 10px;
 }
 
 .popupBox button {
-  width: 100%;
+  width: 75%;
   padding:10px;
   margin-top: 10px;
   font-size: 16px;
