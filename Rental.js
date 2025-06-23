@@ -112,7 +112,7 @@ function SubmitForm(event)
       document.getElementById("rentcontainer").style.display = "none";
       let WelMsg = document.getElementById("WelMsg")
       document.getElementById("WelMsg").style.display = "block";
-      WelMsg.innerHTML="Kia Ora " + firstName1 + " Let us help you select your dream jewellery. Select from the categories below  (Nityaa to update)";
+    
       //document.getElementById("MainContainer").style.display = "flex";
       showItems("category");   
   }
@@ -179,8 +179,10 @@ function showItems (type)
   BackButton.style.display = type === "category" ? "none" : "inline-block";
 
   if (type === "category") 
+    
   {
-    let added = [];
+      WelMsg.innerHTML="Kia Ora " + firstName1 + " Let us help you select your dream jewellery. Select from the categories below  (Nityaa to update)";
+      let added = [];
     for (let i = 0; i < Products.length; i++) 
       
    {
