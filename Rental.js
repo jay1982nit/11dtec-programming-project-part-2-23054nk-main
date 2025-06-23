@@ -255,7 +255,7 @@ function showItems (type)
       const img = createImage (p.image, p.name);
           img.onclick = () => {
           console.log("Product clicked:", product.name);
-          showPopupBox(product);
+          showProduct(product);
         };
       const name = document.createElement ("P");
       name.textContent = p.name;
@@ -299,7 +299,22 @@ function goBack ()
   return img;
    }
 
-function showPopupBox(product);
+function showProduct(product)
+      selectedProduct = product;
+
+      document.getElementById("popupBox").style.display = "block";
+      document.getElementById("popupImage").innerHTML = `<img src="${product.image}" alt="${product.name}">`;
+      document.getElementById("popupName").textContent = product.name;
+      document.getElementById("popupPrice").textContent = "Price per day: $" + product.price;
+      document.getElementById("totalPrice").textContent = product.price;
+      document.getElementById("karatSelect").value = "";
+      document.getElementById("karatMessage").textContent = "";
+      document.getElementById("daysSelect").value = "1";
+
+      console.log("Popup shown for:", product.name);
+    }
+
+
 
 
 
