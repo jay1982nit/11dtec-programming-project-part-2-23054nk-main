@@ -343,9 +343,12 @@ video {
       color: #a35a5a;
     }
 
-  .backButton {
+.backButton {
   display: none;
-  margin: 20px auto 0 auto; /* Top margin + auto for horizontal centering */
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 10px 20px;
   background-color: #a35a5a;
   color: white;
@@ -355,8 +358,8 @@ video {
   
     }
 
-    .backButton:hover {
-      background-color: #8c4747;
+.backButton:hover {
+  background-position: #8c4747;
     }
 
 /**************************************RENTAL**************************************************/ 
