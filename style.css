@@ -339,13 +339,13 @@ background-color: #4CAF50;
       margin-bottom: 6px;
     }
 
-    .product-info {
+    .productinfo {
       font-size: 16px;
       margin: 0;
       color: #a35a5a;
     }
 
-    .BackButton {
+    .backButton {
       display: none;
       margin-top: 20px;
       padding: 10px 20px;
@@ -356,7 +356,7 @@ background-color: #4CAF50;
       cursor: pointer;
     }
 
-    .BackButton:hover {
+    .backButton:hover {
       background-color: #8c4747;
     }
 

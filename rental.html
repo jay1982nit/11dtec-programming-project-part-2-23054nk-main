@@ -76,22 +76,23 @@
 
 <!-- Images of jewelry category Nityaa to change images and alt-->
 <div id="MainContainer" class="MainContainer"></div>
-<button class="BackButton" id="BackButton" onclick="goBack()">← Back</button>
+<button class="backButton" id="backButton" onclick="goBack()">← Back</button>
 <!---------------------------------------POPUP BOX------------------------------------------------------------------------------------------->
 <div id="popupBox" class="popupBox">
-  <button onclick="closePopup()">close</button>
+  <p id="popupMsg"></p>
   <div id="popupImage"></div>
   <p id="popupName"></p>
   <p id="popupPrice"></p>
   
   <!--Karat Selection-->
   <label>Karat:
-    <select id="KaratSelect" onchange="checkKarat()">
+    <select id="karatSelect" onchange="checkKarat()">
     <option value="">Select Karat</option>
     <option value="10">10K</option>
     <option value="14">14K</option>
     <option value="18">18K</option>
     <option value="20">20K</option>
+    <option value="22">22K</option>
     <option value="24">24K</option>
     </select>
   </label>
@@ -111,6 +112,7 @@
   <!-- total price display -->
   <p> Total price: $<span id="totalPrice">0</span></p>
   <button onclick="addToCart()">Add To Cart</button>
+  <button onclick="closePopup()">close</button>
 </div>
 
 

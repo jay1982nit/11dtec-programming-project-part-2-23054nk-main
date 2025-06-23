@@ -160,7 +160,7 @@ function closeForm()
     { key: "NecklaceSet_HE_24", category: "Necklace Set", material: "High End Jewellery", name: "HE Rose Gold Necklace set", image: "images/HE Rose Gold Necklaceset.jpg", price: 460, market_price: 46000, karat:24}        
  ];
 
-let selectdCategory ="";
+let selectedCategory ="";
 let selectedMaterial ="";
 
 
@@ -170,20 +170,17 @@ function showItems (type)
   console.log ("enter the function show item: " + type)
   currentStage = type;
   const container = document.getElementById ("MainContainer");
-  const backBtn = document.getElementById ("backButton");
+  const backButton = document.getElementById ("backButton");
   container.innerHTML="";
   container.style.display = "flex";
 
   //show or hide back button depending on stage
-  BackButton.style.display = type === "category" ? "none" : "inline-block";
+  backButton.style.display = type === "category" ? "none" : "inline-block";
 
   if (type === "category") 
-    
   {
-      
       let added = [];
     for (let i = 0; i < Products.length; i++) 
-      
    {
       let category = Products[i].category;
       if(!added.includes(category)) 
@@ -216,74 +213,82 @@ function showItems (type)
   {
     WelMsg.innerHTML= firstName1 + " Please Select from the material from below  (Nityaa to update)";
     let added = [];
-    for (let i = 0; i < Products.length; i++) {
-   let p = Products[i];
-   if (p.category === selectedCategory && !added.includes(p.material)) {
-    added.push (p.material);
+    for (let i = 0; i < Products.length; i++) 
+    {
+      let product = Products[i];
+      if (product.category === selectedCategory && !added.includes(product.material)) 
+      {
+        added.push (product.material);
 
-    const wrapper = document.createElement ("div");
-    wrapper.className = "item";
-    wrapper.onclick = () => {
-      selectedMaterial = p.material;
-      showItems ("final");
-    };
+        const wrapper = document.createElement ("div");
+        wrapper.className = "item";
+        wrapper.onclick = () => 
+        {
+          selectedMaterial = product.material;
+          showItems ("final");
+        };
 
-    const img = createImage (p.image, p.material);
-    wrapper.appendChild (img);
+        const img = createImage (product.image, product.material);
+        wrapper.appendChild (img);
 
-    const label = document.createElement ("p"); 
-    label.textContent = p.material;
-    label.className = "product - info";
-    wrapper.appendChild (label);
+        const label = document.createElement ("p"); 
+        label.textContent = product.material;
+        label.className = "productinfo";
+        wrapper.appendChild (label);
 
-    container.appendChild (wrapper);
-   }   
-  }
+        container.appendChild (wrapper);
+      }  
+    }
   } 
   else if (type === "final") 
   {
     WelMsg.innerHTML=firstName1 + " Please Select your desired piece  (Nityaa to update)";
-  let found = false;
-  for (let i = 0; i < Products.length; i++) {
-    let p = Products [i];
-    if (p.category === selectedCategory && p.material === selectedMaterial) {
-      found = true;
+    let found = false;
+    for (let i = 0; i < Products.length; i++) 
+    {
+      let product = Products [i];
+      if (product.category === selectedCategory && product.material === selectedMaterial) 
+      {
+        found = true;
+        const item = document.createElement ("div");
+        item.className = "item";
+        const img = createImage (product.image, product.name);
+            img.onclick = () => 
+          {
+            console.log("Product clicked:", product.name);
+            selectedProduct = product;
+            showProduct(product);
+          };
+        const name = document.createElement ("P");
+        name.textContent = product.name;
+        name.className = "product-info";
+        const price = document.createElement ("p");
+        price.textContent = `price: $${product.price} \n (Market price: $${product.market_price})`;
+        price.className = "product-info";
 
-      const item = document.createElement ("div");
-      item.className = "item";
+        item.appendChild (img);
+        item.appendChild (name);
+        item.appendChild (price);
 
-      const img = createImage (p.image, p.name);
-          img.onclick = () => {
-          console.log("Product clicked:", product.name);
-          showProduct(product);
-        };
-      const name = document.createElement ("P");
-      name.textContent = p.name;
-      name.className = "product-info";
-      const price = document.createElement ("p");
-      price.textContent = `price: $${p.price} \n (Market price: $${p.market_price})`;
-      price.className = "product-info";
-
-      item.appendChild (img);
-      item.appendChild (name);
-      item.appendChild (price);
-
-      container.appendChild (item);
+        container.appendChild (item);
+      }
+    }
+    if (!found) 
+    {
+    container.textContent = "No matching products found.";
     }
   }
-  if (!found) {
-    container.textContent = "No matching products found.";
-  }
- }
 }
 
 function goBack () 
 {
-  if (currentStage === "final") {
+  if (currentStage === "final") 
+  {
     WelMsg.innerHTML= firstName1 + " Please Select from the material from below  (Nityaa to update)";
     showItems ("material");
   } 
-  else if (currentStage === "material") {
+  else if (currentStage === "material") 
+  {
     WelMsg.innerHTML="Kia Ora " + firstName1 + " Let us help you select your dream jewellery. Select from the categories below  (Nityaa to update)";
     showItems ("category");
   } 
@@ -300,17 +305,53 @@ function goBack ()
    }
 
 function showProduct(product)
+{  
+  document.getElementById("popupBox").style.display = "block";
+   document.getElementById("mainContainer").classList.add("inactive"); // deactivate main container
+  document.getElementById("popupMsg").innerHTML = firstName1 + " you have selected one of the best products. Fill in details and 'Add to cart' to procedd further"
+  document.getElementById("popupImage").innerHTML = `<img src="${product.image}" alt="${product.name}">`;
+  document.getElementById("popupName").textContent = product.name;
+  document.getElementById("popupPrice").textContent = "Price per day: $" + product.price;
+  document.getElementById("totalPrice").textContent = product.price;
+  document.getElementById("karatSelect").value = "";
+  document.getElementById("karatMessage").textContent = "";
+  document.getElementById("daysSelect").value = "1";
+  console.log("Popup shown for:", product.name);
+}
+    // Check if the selected karat matches the product's karat
+function checkKarat() 
 {
-      selectedProduct = product;
+  const selectedKarat = document.getElementById("karatSelect").value;
+  const message = document.getElementById("karatMessage");
+    if (parseInt(selectedKarat) !== selectedProduct.karat) 
+      {
+        message.textContent = "Item not available with specified karat. Available: " + selectedProduct.karat + "K";
+        console.log("Wrong karat. Expected:", selectedProduct.karat, "Selected:", selectedKarat);
+      } else 
+      {
+        message.textContent = "";
+        console.log("Correct karat selected:", selectedKarat);
+      }
+ }
 
-      document.getElementById("popupBox").style.display = "block";
-      document.getElementById("popupImage").innerHTML = `<img src="${product.image}" alt="${product.name}">`;
-      document.getElementById("popupName").textContent = product.name;
-      document.getElementById("popupPrice").textContent = "Price per day: $" + product.price;
-      document.getElementById("totalPrice").textContent = product.price;
-      document.getElementById("karatSelect").value = "";
-      document.getElementById("karatMessage").textContent = "";
-      document.getElementById("daysSelect").value = "1";
+    // Calculate total rental price based on selected number of days
+    function calculateTotal() {
+      const days = parseInt(document.getElementById("daysSelect").value);
+      const total = selectedProduct.price * days;
+      document.getElementById("totalPrice").textContent = total;
+      console.log("Days:", days, "Total price:", total);
+    }
 
-      console.log("Popup shown for:", product.name);
+        // Close popup panel or Add to cart performs same task
+    function closePopup() {
+      document.getElementById("popupBox").style.display = "none";
+      document.getElementById("mainContainer").classList.remove("inactive"); // activate main container
+      console.log("Popup closed.");
+    }
+    
+
+        function addToCart() {
+      document.getElementById("popupBox").style.display = "none";
+      document.getElementById("mainContainer").classList.remove("inactive"); // activate main container
+      console.log("Popup closed.");
     }
