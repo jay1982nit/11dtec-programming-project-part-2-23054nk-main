@@ -343,15 +343,16 @@ video {
       color: #a35a5a;
     }
 
-    .backButton {
-      display: none;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #a35a5a;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
+  .backButton {
+  display: none;
+  margin: 20px auto 0 auto; /* Top margin + auto for horizontal centering */
+  padding: 10px 20px;
+  background-color: #a35a5a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block; /* Needed for margin: auto to work */
     }
 
     .backButton:hover {
