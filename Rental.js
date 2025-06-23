@@ -332,18 +332,20 @@ function checkKarat()
         message.textContent = "";
         console.log("Correct karat selected:", selectedKarat);
       }
- }
+}
 
     // Calculate total rental price based on selected number of days
-    function calculateTotal() {
-      const days = parseInt(document.getElementById("daysSelect").value);
-      const total = selectedProduct.price * days;
-      document.getElementById("totalPrice").textContent = total;
-      console.log("Days:", days, "Total price:", total);
-    }
+function calculateTotal() 
+  {
+    const days = parseInt(document.getElementById("daysSelect").value);
+    const total = selectedProduct.price * days;
+    document.getElementById("totalPrice").textContent = total;
+    console.log("Days:", days, "Total price:", total);
+  }
 
         // Close popup panel or Add to cart performs same task
-    function closePopup() {
+    function closePopup() 
+    {
       document.getElementById("popupBox").style.display = "none";
       document.getElementById("mainContainer").classList.remove("inactive"); // activate main container
       console.log("Popup closed.");
