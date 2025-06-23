@@ -352,7 +352,7 @@ video {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  display: block; /* Needed for margin: auto to work */
+  
     }
 
     .backButton:hover {
