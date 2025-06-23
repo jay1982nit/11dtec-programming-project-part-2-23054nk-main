@@ -350,8 +350,8 @@ function checkKarat()
     }
     
 
-        function addToCart() {
+     /*   function addToCart() {
       document.getElementById("popupBox").style.display = "none";
       document.getElementById("mainContainer").classList.remove("inactive"); // activate main container
       console.log("Popup closed.");
-    }
+    }*/
