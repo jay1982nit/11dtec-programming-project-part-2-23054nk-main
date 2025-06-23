@@ -300,6 +300,7 @@ function goBack ()
    }
 
 function showProduct(product)
+{
       selectedProduct = product;
 
       document.getElementById("popupBox").style.display = "block";
