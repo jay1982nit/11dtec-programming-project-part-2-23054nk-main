@@ -201,7 +201,7 @@ function showItems (type)
       //create label
       const label = document.createElement ("p");
       label.textContent = category;
-      label.className = "product-info";
+      label.className = "productinfo";
       wrapper.appendChild (label);
 
       container.appendChild (wrapper);
