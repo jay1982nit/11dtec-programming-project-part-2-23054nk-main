@@ -316,16 +316,11 @@ video {
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 22%;
-  cursor: pointer;
-    text-align: center;
+  text-align: center;
   flex: 1 1 calc(25% - 20px);
   max-width: calc(25% - 20px);
   padding: 0px;
-  min-height: 650px;
+  min-height: 550px;
   }
 
     .item img {
