@@ -447,19 +447,10 @@ background-color: #4CAF50;
   padding: 20px;
   z-index: 10;
   border-radius: 10px;  display: none;
-  position: fixed;
-  top:0;
-  right: 0;
-  width: 320px;
-  height:100%;
-  background:white;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-  padding:15px;
-  overflow-y: auto;
-  z-index: 10;
+
 }
 .popupBox img {
-  width: 70%;
+  width: 100%;
   border-radius: 10px;
 margin-bottom: 10px;
 }
