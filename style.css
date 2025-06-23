@@ -439,7 +439,7 @@ video {
   width: 400px;
   height: auto;
   transform: translate(-50%, -50%);
-  background: white;
+  background: rgb(246, 198, 198);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
   z-index: 10;
@@ -447,16 +447,28 @@ video {
 
 }
 .popupBox img {
-  width: 100%;
+  display: block;
+  width: 70%;
+  margin: 0 auto 10px; 
+  height: 200px;
   border-radius: 10px;
-margin-bottom: 10px;
+  object-fit: cover;
 }
 
 .popupBox button {
   width: 75%;
   padding:10px;
-  margin-top: 10px;
+   margin: 0 auto 10px; 
   font-size: 16px;
+}
+
+.popupBox select {
+  width: 70%;
+  display: block;        /* Makes the dropdown full width */
+  padding: 10px;       /* Adds space inside the box */
+  font-size: 16px;     /* Makes text larger */
+  margin-top: 10px auto;    /* Adds space above */
+  border-radius: 6px;  /* Rounded corners */
 }
 /**********FOR THE POPUP BOX**********/
 /**************************************BROWSE BY JEWELRY**************************************************/
