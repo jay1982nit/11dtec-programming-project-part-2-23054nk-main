@@ -283,12 +283,12 @@ function goBack ()
 {
   if (currentStage === "final") 
   {
-    WelMsg.innerHTML= firstName1 + " Please Select from the material from below  (Nityaa to update)";
+    WelMsg.innerHTML= firstName1 + " Please Select from the material from below";
     showItems ("material");
   } 
   else if (currentStage === "material") 
   {
-    WelMsg.innerHTML="Kia Ora " + firstName1 + " Let us help you select your dream jewellery. Select from the categories below  (Nityaa to update)";
+    WelMsg.innerHTML="Kia Ora " + firstName1 + " Let us help you select your dream jewellery. Select from the categories below";
     showItems ("category");
   } 
 }
