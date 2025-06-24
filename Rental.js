@@ -112,7 +112,7 @@ function SubmitForm(event)
       document.getElementById("rentcontainer").style.display = "none";
       let WelMsg = document.getElementById("WelMsg")
       document.getElementById("WelMsg").style.display = "block";
-      WelMsg.innerHTML="Kia Ora " + firstName1 + " Let us help you select your dream jewellery. Select from the categories below  (Nityaa to update)";
+      WelMsg.innerHTML="Kia Ora " + firstName1 + " Let us help you select your dream jewellery. Select from the categories below";
       showItems("category");   
   }
   return false; // Ensure form does not reload page
