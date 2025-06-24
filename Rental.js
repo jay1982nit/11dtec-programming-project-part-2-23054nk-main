@@ -155,7 +155,7 @@ function closeForm()
     { key: "Bracelet_HE_24", category: "Bracelets", material: "High End Jewellery", name: "HE Yellow Gold bracelet", image: "images/HE YG bracelet.jpg", price: 360, market_price: 36000, karat:24},        
     { key: "NecklaceSet_YG_18", category: "Necklace Sets", material: "Yellow Gold", name: "Yellow Gold Necklace set", image: "images/gold green set.webp", price: 380, market_price: 38000, karat:18 },
     { key: "NecklaceSet_RG_20", category: "Necklace Sets", material: "Rose Gold", name: "Rose Gold Necklace set", image: "images/rose gold necklace.webp", price: 360, market_price: 36000, karat:20 },
-    { key: "NecklaceSet_WG_22", category: "Necklace Sets", material: "White Gold", name: "White Gold Necklace set", image: "images/white gold set.avif.jpg", price: 380, market_price: 380000, karat:22  },
+    { key: "NecklaceSet_WG_22", category: "Necklace Sets", material: "White Gold", name: "White Gold Necklace set", image: "images/white gold set.avif", price: 380, market_price: 380000, karat:22  },
     { key: "NecklaceSet_HE_24", category: "Necklace Sets", material: "High End Jewellery", name: "HE Rose Gold Necklace set", image: "images/HE Rose Gold Necklaceset.jpg", price: 460, market_price: 46000, karat:24}        
  ];
 
