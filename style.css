@@ -321,6 +321,7 @@ video {
   max-width: calc(25% - 20px);
   padding: 0px;
   min-height: 550px;
+  color: #a35a5a;
   }
 
 .item img {
@@ -330,6 +331,7 @@ video {
   object-fit: cover;
   display: block;
   margin: 0 auto;
+  color: #a35a5a;
     }
 
     .productinfo {
