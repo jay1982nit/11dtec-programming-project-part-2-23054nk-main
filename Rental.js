@@ -210,7 +210,7 @@ function showItems (type)
   }  
   else if (type === "material") 
   {
-    WelMsg.innerHTML= firstName1 + " Please Select from the material from below  (Nityaa to update)";
+    WelMsg.innerHTML= firstName1 + " Please Select from the material from below";
     let added = [];
     for (let i = 0; i < Products.length; i++) 
     {
