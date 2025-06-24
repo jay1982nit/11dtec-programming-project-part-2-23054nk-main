@@ -14,7 +14,7 @@
   font-size: 17px;
 }
 
-.topnav a.active {
+.topnav .active {
   background-color:#93B6AD;
   color: black;
 }
