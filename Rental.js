@@ -241,7 +241,7 @@ function showItems (type)
   } 
   else if (type === "final") 
   {
-    WelMsg.innerHTML=firstName1 + " Please Select your desired piece";
+    WelMsg.innerHTML=firstName1 + " please select your desired piece";
     let found = false;
     for (let i = 0; i < Products.length; i++) 
     {
