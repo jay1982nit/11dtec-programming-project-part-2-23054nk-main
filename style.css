@@ -259,8 +259,9 @@ video {
 
 /* Set a style for the submit/login button */
 .formcontainer .btn {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #90A955;
+  color: black;
+  font-weight: bold;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
@@ -278,7 +279,9 @@ video {
 
 /* Add a red background color to the cancel button */
 .formcontainer .cancel {
-  background-color: red;
+  background-color: #ffc1cc;
+  color: black;
+  font-weight: bold;
 }
 
 /* Add some hover effects to buttons */
