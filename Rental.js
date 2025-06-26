@@ -21,7 +21,7 @@ function SubmitForm(event)
     firstName1 = document.getElementById("Firstnamebox").value.trim();
     console.log("First name is:", firstName1);
     let errorMessage1= document.getElementById("errorMessage1box");
-    if (firstName1 === null || firstName1 === "" || firstName1 === " ")  //  That is the code that gives an error in an alert if you have not entered anything, Nityaa to update 
+    if (firstName1 === null || firstName1 === "" || firstName1 === " ")  //  That is the code that gives an error in an alert if you have not entered anything,
     {
        errorMessage1box.innerHTML ="Invalid, you must enter a valid name";
       isValid = false;
