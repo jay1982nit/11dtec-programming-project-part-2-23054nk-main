@@ -208,7 +208,7 @@ video {
 .rentbutton {
   background-color: #7f9e37;
   color: rgb(0, 0, 0);
-  
+  font-weight: bold;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
