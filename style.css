@@ -445,11 +445,13 @@ video {
   height: auto;
   transform: translate(-50%, -50%);
   background: rgb(246, 198, 198);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
   padding: 20px;
   z-index: 10;
-  border-radius: 10px;  display: none;
-
+  border-radius: 10px;  
+  display: none;
+  flex-direction: column;
+  align-items: center;
 }
 .popupBox img {
   display: block;
@@ -473,7 +475,8 @@ video {
   padding: 10px;       /* Adds space inside the box */
   font-size: 16px;     /* Makes text larger */
   margin-top: 10px auto;    /* Adds space above */
-  border-radius: 6px;  /* Rounded corners */
+  border-radius: 6px; 
+  text-align: center; /* Rounded corners */
 }
 /**********FOR THE POPUP BOX**********/
 /**************************************BROWSE BY JEWELRY**************************************************/
