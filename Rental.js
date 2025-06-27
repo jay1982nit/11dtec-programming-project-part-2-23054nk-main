@@ -167,7 +167,7 @@ let selectedMaterial ="";
 function showItems (type) 
 { 
   console.log ("enter the function show item: " + type)
-  currentStage = type;
+  currentStage = type;// Track current stage (category, material, or final)
   const container = document.getElementById ("mainContainer");
   const backButton = document.getElementById ("backButton");
   container.innerHTML="";
@@ -178,7 +178,7 @@ function showItems (type)
 
   if (type === "category") 
   {
-      let added = [];
+      let added = [];// To track unique categories 
     for (let i = 0; i < Products.length; i++) 
    {
       let category = Products[i].category;
@@ -186,7 +186,7 @@ function showItems (type)
     {
        added.push(category);
       //create wrapper div
-      const wrapper = document.createElement ("div");
+      const wrapper = document.createElement ("div");// Create item box
       wrapper.className = "item";
       wrapper.onclick = () => 
       {
