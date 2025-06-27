@@ -164,15 +164,12 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5rem;
-  
 }
 
 
 
 /****************************************************************************************/ 
 /*for video home page final*/
-
-
 .video-container {
   display: flex;
   justify-content: center;
@@ -210,7 +207,8 @@ video {
 
 .rentbutton {
   background-color: #7f9e37;
-  color: white;
+  color: rgb(0, 0, 0);
+  
   padding: 16px 20px;
   border: none;
   cursor: pointer;
@@ -337,11 +335,11 @@ video {
   color: #862f2f;
     }
 
-    .productinfo {
-      font-size: 16px;
-      margin: 0;
-      color: #862f2f;
-    }
+.productinfo {
+  font-size: 16px;
+  margin: 0;
+  color: #862f2f;
+  }
 
 .backButton {
   display: none;
@@ -464,7 +462,7 @@ video {
 }
 
 .popupPrice, .popupName {
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -473,19 +471,17 @@ video {
 .popupBox button {
   width: 100%;
   padding:10px;
-   margin: 0 auto 10px; 
+  margin: 0 auto 10px; 
   font-size: 16px;
   align-items: center;
 }
 
 .btnAdd {
   background-color: #90A955; /* green */
-  
 }
 
 .btnClose {
   background-color:#ffc1cc; /* pink */
- 
 }
 
 .popupBox select {
