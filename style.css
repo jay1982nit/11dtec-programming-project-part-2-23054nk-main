@@ -353,8 +353,8 @@ video {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  
-    }
+  font-weight: bold;
+  }
 
 .backButton:hover {
   background-position: #8c4747;
@@ -474,6 +474,7 @@ video {
   margin: 0 auto 10px; 
   font-size: 16px;
   align-items: center;
+  font-weight: bold;
 }
 
 .btnAdd {
