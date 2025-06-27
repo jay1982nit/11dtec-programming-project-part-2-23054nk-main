@@ -461,7 +461,7 @@ video {
   align-items: center;
 }
 
-.popupPrice, .popupName {
+.popupPrice, .popupName, .popupTotal {
   display: block;
   margin-left: auto;
   margin-right: auto;
