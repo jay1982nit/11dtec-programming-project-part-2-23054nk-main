@@ -301,7 +301,7 @@ video {
  }
 
  /*color of the error msg text*/
-#errorMessage1box, #errorMessage2box, #errorMessage3box{
+#errorMessage1box, #errorMessage2box, #errorMessage3box, #karatMessage{
   text-align: center;
   color: red;
   font-size: 15px;
