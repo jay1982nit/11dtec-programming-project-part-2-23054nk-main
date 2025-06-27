@@ -307,7 +307,7 @@ function showProduct(product)
 {  
   document.getElementById("popupBox").style.display = "block";
   //document.getElementById("mainContainer").classList.add("inactive"); // deactivate main container
-  document.getElementById("popupMsg").innerHTML = firstName1 + " you have selected one of the best products. Fill in details and 'Add to cart' to proceed further"
+  document.getElementById("popupMsg").innerHTML = firstName1 + " " +lastName1 + " you have selected one of the best products. Fill in details and 'Add to cart' to proceed further"
   document.getElementById("popupImage").innerHTML = `<img src="${product.image}" alt="${product.name}">`;
   document.getElementById("popupName").textContent = product.name;
   document.getElementById("popupPrice").textContent = "Price per day: $" + product.price;
