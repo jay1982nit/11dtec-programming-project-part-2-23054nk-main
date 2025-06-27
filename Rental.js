@@ -309,7 +309,7 @@ function showProduct(product)
   //document.getElementById("mainContainer").classList.add("inactive"); // deactivate main container
   document.getElementById("popupMsg").innerHTML = firstName1 + " " +lastName1 + " you have selected one of the best products. Fill in details and 'Add to cart' to proceed further"
   document.getElementById("popupImage").innerHTML = `<img src="${product.image}" alt="${product.name}">`;
-  document.getElementById("popupName").textContent = product.name;
+  document.getElementById("popupName").textContent = "Product Selected: " + product.name;
   document.getElementById("popupPrice").textContent = "Price per day: $" + product.price;
   document.getElementById("totalPrice").textContent = product.price;
   document.getElementById("karatSelect").value = "";
@@ -342,7 +342,7 @@ function calculateTotal()
     console.log("Days:", days, "Total rental price:", total);
   }
 
-        // Close popup panel or Add to cart performs same task
+        // Close popup panel or Add to cart performs same taskpopupName
     function closePopup() 
     {
       document.getElementById("popupBox").style.display = "none";
