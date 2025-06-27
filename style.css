@@ -444,7 +444,7 @@ video {
   width: 400px;
   height: auto;
   transform: translate(-50%, -50%);
-  background: rgb(246, 198, 198);
+  background: rgb(246, 233, 233);
   /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
   padding: 20px;
   z-index: 10;
