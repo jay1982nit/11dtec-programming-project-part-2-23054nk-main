@@ -346,8 +346,8 @@ video {
 .backButton {
   display: none;
   position: fixed;
-  top: 90%;
-  left: 50%;
+  top: 30%;
+  left: 90%;
   transform: translate(-50%, -50%);
   padding: 10px 20px;
   background-color: #a35a5a;
