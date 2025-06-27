@@ -480,12 +480,12 @@ video {
 
 .btnAdd {
   background-color: #90A955; /* green */
-  color: white;
+  
 }
 
 .btnClose {
   background-color:#ffc1cc; /* pink */
-  color: white;
+ 
 }
 
 .popupBox select {
