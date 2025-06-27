@@ -228,7 +228,7 @@ function showItems (type)
         };
 
         const img = createImage (product.image, product.material);
-        wrapper.appendChild (img);;
+        wrapper.appendChild (img);
 
         const label = document.createElement ("p"); 
         label.textContent = product.material;
