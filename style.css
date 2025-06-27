@@ -460,6 +460,7 @@ video {
   height: 200px;
   border-radius: 10px;
   object-fit: cover;
+  align-items: center;
 }
 
 .popupBox button {
@@ -467,6 +468,7 @@ video {
   padding:10px;
    margin: 0 auto 10px; 
   font-size: 16px;
+  align-items: center;
 }
 
 .popupBox select {
