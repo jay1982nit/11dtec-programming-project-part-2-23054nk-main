@@ -463,6 +463,13 @@ video {
   align-items: center;
 }
 
+.popupPrice, .popupName {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .popupBox button {
   width: 100%;
   padding:10px;
