@@ -463,13 +463,13 @@ video {
 .popupPrice, .popupName, .popupTotal {
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;rentbutton
   text-align: center;
 }
 
 .popupBox button {
   width: 100%;
-  padding:10px;
+  padding:15px;
   margin: 0 auto 10px; 
   font-size: 16px;
   align-items: center;
