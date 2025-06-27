@@ -469,11 +469,13 @@ video {
 
 .popupBox button {
   width: 100%;
-  padding:15px;
+   padding: 16px 20px;
   margin: 0 auto 10px; 
   font-size: 16px;
   align-items: center;
   font-weight: bold;
+    cursor: pointer;
+  opacity: 0.8;
 }
 
 .btnAdd {
