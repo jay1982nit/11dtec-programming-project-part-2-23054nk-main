@@ -464,7 +464,7 @@ video {
 }
 
 .popupBox button {
-  width: 75%;
+  width: 100%;
   padding:10px;
    margin: 0 auto 10px; 
   font-size: 16px;
@@ -472,7 +472,7 @@ video {
 }
 
 .popupBox select {
-  width: 70%;
+  width: 100%;
   display: block;        /* Makes the dropdown full width */
   padding: 10px;       /* Adds space inside the box */
   font-size: 16px;     /* Makes text larger */
