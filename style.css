@@ -457,7 +457,7 @@ video {
   display: block;
   width: 70%;
   margin: 0 auto 10px; 
-  height: 200px;
+  height: 225px;
   border-radius: 10px;
   object-fit: cover;
   align-items: center;
@@ -477,7 +477,7 @@ video {
 }
 
 .btnClose {
-  background-color:#ffc1cc; /* green */
+  background-color:#a61a34; /* green */
   color: white;
 }
 
