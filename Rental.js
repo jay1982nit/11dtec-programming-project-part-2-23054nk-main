@@ -190,21 +190,21 @@ function showItems (type)
       wrapper.className = "item";
       wrapper.onclick = () => 
       {
-        selectedCategory = category;
-        showItems ("material");
+        selectedCategory = category;// Save chosen category
+        showItems ("material");// Go to material stage
       };
 
       // create image 
-      const img = createImage(Products[i].image, category);
+      const img = createImage(Products[i].image, category);// Create image element
       wrapper.appendChild (img);
 
       //create label
-      const label = document.createElement ("p");
+      const label = document.createElement ("p");// Add text label
       label.textContent = category;
       label.className = "productinfo";
       wrapper.appendChild (label);
 
-      container.appendChild (wrapper);
+      container.appendChild (wrapper);// Add to page
     }
    }
   }  
@@ -223,26 +223,26 @@ function showItems (type)
         wrapper.className = "item";
         wrapper.onclick = () => 
         {
-          selectedMaterial = product.material;
-          showItems ("final");
+          selectedMaterial = product.material;// Save chosen material
+          showItems ("final");// Move to final stage
         };
 
-        const img = createImage (product.image, product.material);
+        const img = createImage (product.image, product.material); // create Image
         wrapper.appendChild (img);
 
-        const label = document.createElement ("p"); 
+        const label = document.createElement ("p"); // Material name
         label.textContent = product.material;
         label.className = "productinfo";
         wrapper.appendChild (label);
 
-        container.appendChild (wrapper);
+        container.appendChild (wrapper); // Add to container
       }  
     }
   } 
   else if (type === "final") 
   {
     WelMsg.innerHTML=firstName1 + " please select your desired piece";
-    let found = false;
+    let found = false;// Flag to check if matching product is found
     for (let i = 0; i < Products.length; i++) 
     {
       let product = Products [i];
@@ -255,10 +255,10 @@ function showItems (type)
             img.onclick = () => 
           {
             console.log("Product clicked:", product.name);
-            selectedProduct = product;
+            selectedProduct = product;// Store selected product
             showProduct(product);
           };
-        const name = document.createElement ("P");
+        const name = document.createElement ("P");// Name display
         name.textContent = product.name;
         name.className = "product-info";
         const price = document.createElement ("p");
@@ -269,12 +269,12 @@ function showItems (type)
         item.appendChild (name);
         item.appendChild (price);
 
-        container.appendChild (item);
+        container.appendChild (item);// Add product to screen
       }
     }
     if (!found) 
     {
-    container.textContent = "No matching products found.";
+    container.textContent = "No matching products found.";// Show message if no match
     }
   }
 }
