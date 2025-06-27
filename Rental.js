@@ -23,22 +23,22 @@ function SubmitForm(event)
     let errorMessage1= document.getElementById("errorMessage1box");
     if (firstName1 === null || firstName1 === "" || firstName1 === " ")  //  That is the code that gives an error in an alert if you have not entered anything,
     {
-       errorMessage1box.innerHTML ="Invalid, you must enter a valid name";
+       errorMessage1box.innerHTML ="Invalid, you must enter a valid name";// Show error if empty
       isValid = false;
     } 
     else if (!isNaN(firstName1))
     {
-      errorMessage1box.innerHTML = "Name must contain only letters.";
+      errorMessage1box.innerHTML = "Name must contain only letters.";// Show error if it's a number
       isValid = false;
     }
     else if (/\d/.test(firstName1)) 
     {
-    errorMessage1box.innerHTML = "Name must not contain numbers.";
+    errorMessage1box.innerHTML = "Name must not contain numbers."; // Show error if it contains any digit
     isValid = false;
     } 
     else if (!/^[A-Z]/.test(firstName1))
     {
-      errorMessage1box.innerHTML = "The first letter of the name must be a capital letter.";
+      errorMessage1box.innerHTML = "The first letter of the name must be a capital letter.";// Show error if it doesn't start with capital
       isValid = false; // Prevent form submission
     }
     else 
