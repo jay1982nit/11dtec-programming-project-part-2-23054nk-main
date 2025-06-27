@@ -354,6 +354,13 @@ function calculateTotal()
     function addToCart() {
       const selectedKarat = document.getElementById("karatSelect").value;
       const message = document.getElementById("karatMessage");
+        // Check if karat is selected
+      if (selectedKarat === "") {
+      message.textContent = "Please select a karat option.";
+      message.style.color = "red";
+      console.log("Karat not selected.");
+      return; // Stop submission
+    }
       document.getElementById("popupBox").style.display = "none";
       //document.getElementById("mainContainer").classList.remove("inactive"); // activate main container
       console.log("Popup closed.");
