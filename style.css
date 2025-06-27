@@ -202,7 +202,7 @@ video {
 .rental img {
   width: 100%;        /* Full width of the screen */
   text-align: center;
-  height: 60vh;        /* 75% of the viewport height */
+  height: 55vh;        /* 75% of the viewport height */
   object-fit: cover;   /* Crop the image to fill the space nicely */
   display: block;      /* Removes space under the image */
   border-radius: 15px;    /* Optional: square corners */
