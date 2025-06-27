@@ -471,6 +471,16 @@ video {
   align-items: center;
 }
 
+.btnAdd {
+  background-color: #90A955; /* green */
+  color: white;
+}
+
+.btnClose {
+  background-color:#ffc1cc; /* green */
+  color: white;
+}
+
 .popupBox select {
   width: 100%;
   display: block;        /* Makes the dropdown full width */
